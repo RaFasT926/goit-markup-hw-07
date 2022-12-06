@@ -536,6 +536,12 @@
   padding-top: 15px;
 }
 .modal-form__textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__input-icon {
@@ -562,7 +568,7 @@
 .custom-checkmark__icon {
   position: absolute;
   left: 12px;
-  top: -16px;
+  top: -13px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;

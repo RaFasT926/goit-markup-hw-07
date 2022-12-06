@@ -38,6 +38,12 @@
         padding-top: 15px;
 
         &::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
             }
         }
@@ -72,7 +78,7 @@
     &__icon {
         position: absolute;
         left: 12px;
-        top: -16px;
+        top: -13px;
         width: 16px;
         height: 15px;
         border: 2px solid $text-main-color;
@@ -96,7 +102,6 @@
         color: $text-secondary-color;
         text-align: left;
         margin-left: 20px;
-
     }
 
     &__button {
