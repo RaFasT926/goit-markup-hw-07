@@ -1,0 +1,52 @@
+
+.features-section {
+    width: 1200px;
+    margin: 81px auto;
+}
+
+.feature-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    &__icon-container {
+        width: 273px;
+        background-color: $team-bg;
+    }
+
+    &__icon {
+        margin: 25px 102px;
+    }
+
+    &__item-description {
+        width: 270px;
+        height: 75px;
+    }
+
+    &__item-description--h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-main-color;
+}
+
+    &__item-description--p {
+        margin-top: -20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-secondary-color;
+        
+    }
+}
+

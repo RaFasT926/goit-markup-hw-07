@@ -1,0 +1,34 @@
+.customers-section {
+    width: 1600px;
+    margin: auto;
+    padding-bottom: 90px;
+
+    &__tittle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;    
+        letter-spacing: 0.03em;
+        text-align: center;
+        padding-top: 70px;
+    }
+}
+
+.customer {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__container {
+        padding: 16px 32px;
+        border: 1px solid $member-social-icon-fill;
+        border-radius: 4px;
+        
+    }
+
+    &__icon {        
+        fill: $member-social-icon-fill;
+    }
+}

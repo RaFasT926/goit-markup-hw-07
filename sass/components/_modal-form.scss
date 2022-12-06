@@ -1,0 +1,128 @@
+
+.modal-form {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &__input {
+        margin-top: 10px;
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    &__input-item {
+        height: 40px;
+        width: 100%;
+        padding-left: 42px;
+        display: block;
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        &:hover, &:focus {
+            border: 1px solid $highlighted-text-color;
+        }
+
+        &:hover + .modal-form__input-icon,
+        &:focus + .modal-form__input-icon {
+            fill: $highlighted-text-color;
+        }
+    }
+
+    &__textarea {
+        @extend .modal-form__input-item;
+        height: 120px;
+        resize: none;
+        padding-left: 16px;
+        padding-top: 15px;
+
+        &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+            }
+        }
+
+    &__input-icon {
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        fill: $text-main-color;
+        pointer-events: none;
+    }
+
+    &__label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $text-secondary-color;
+    }
+}
+
+.custom-checkmark {
+    @extend .modal-form__group;
+
+    &__label {
+        display: block;
+        padding-left: 18px;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 12px;
+        top: -16px;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $text-main-color;
+        border-radius: 2px;
+    }
+
+    &__check-icon {
+        display: none;
+        position: relative;
+        top: 0;
+        fill: $white-color;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $text-secondary-color;
+        text-align: left;
+        margin-left: 20px;
+
+    }
+
+    &__button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        height: 50px;
+        padding: 10px 75px;
+        margin: 0 120px 40px;
+        background-color: $highlighted-text-color;
+        color: $white-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.custom-checkmark__label input[type="checkbox"]:checked + .custom-checkmark__icon {
+    background-color: $highlighted-text-color;
+    border: none;
+}
+
+.custom-checkmark__label input[type="checkbox"]:checked + .custom-checkmark__icon .custom-checkmark__check-icon {
+    display: inline;
+}
